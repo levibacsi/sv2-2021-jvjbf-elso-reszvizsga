@@ -26,7 +26,7 @@ public class Car {
     }
 
     public void decreasePrice(int percent){
-        price = (int) (getPrice() * (percent / 100.0));
+        price = getPrice() - (int) (getPrice() * (percent / 100.0));
     }
 }
 
